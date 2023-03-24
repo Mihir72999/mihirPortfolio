@@ -3,10 +3,10 @@ import axios from "axios"
 
 
 export const getRegisterData = createAsyncThunk('userData',async()=>{
-    try{ const {data} =  await axios.get(`/getUserData`)
+    try{ const data =  await axios.get(`/getUserData`)
  
     console.log(data)
-    return  data
+    return  data.data
     }catch(error){
        console.log(error)
     }
