@@ -13,9 +13,9 @@ const initialState = {
 
 export const userRegisterData = createAsyncThunk('userData',async(body)=>{
     try{
-        const {data} = await axios.post('/register',body )
+        const data = await axios.post('/register',body )
     
-       return await data
+       return  data.data
 
 
     }catch(error){
