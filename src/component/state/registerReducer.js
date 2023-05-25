@@ -13,7 +13,7 @@ const initialState = {
 
 export const userRegisterData = createAsyncThunk('userData',async(body)=>{
     try{
-        const data = await axios.post('https://api-o3e9.onrender.com/register',body )
+        const data = await axios.post('/register',body )
     
        return  data.data
 
