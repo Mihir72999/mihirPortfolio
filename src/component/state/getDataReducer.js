@@ -3,7 +3,7 @@ import axios from "axios"
 
 
 export const getRegisterData = createAsyncThunk('userData',async()=>{
-    try{ const data =  await axios.get(`https://api-o3e9.onrender.com/getUserData`)
+    try{ const data =  await axios.get(`/getUserData`)
  
     console.log(data)
     return  data.data
