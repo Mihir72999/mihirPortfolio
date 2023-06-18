@@ -5,7 +5,7 @@ import axios from "axios"
 export const fetchNodeData = createAsyncThunk('addData',async(body)=>{
    try{
 
-       const {data} = await axios.post('/login',body )
+       const {data} = await axios.post('https://api-o3e9.onrender.com/login',body )
         return await data
 
    }catch(error){
