@@ -3,8 +3,8 @@ import axios from "axios"
 
 const option = {
     Accept:'application/json',
-    'jwtToken':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGQ5YjdiYjU1NjgwYWZhM2VlMWUzNmYiLCJpYXQiOjE2OTE5ODk5NDd9.E1ZTWjb9Muz_v4n7sHEarmUkMoWUoRaryp17I3P64Xw'
-}
+    'Content-Type':'application/json'
+    }
 
 export const getRegisterData = createAsyncThunk('userData',async()=>{
     try{ const data =  await axios.get(`https://api-o3e9.onrender.com/getUserData`,{headers:option})
